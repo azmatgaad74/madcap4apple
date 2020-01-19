@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=System.LinkedTitle%]">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>REST APIs</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-skin-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/select-skin.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/sanitize-html.min.js" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../A_Introduction Topics/Getting Started.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search our help and documentation" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <p style="background-color: #1c5d85;border-top-left-radius: 0px;padding-left: 14px;border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 0px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #000000;margin-top: 0;line-height: 50px;text-align: left;margin-bottom: 4px;text-indent: 0;"><span style="color: #ffffff; font-size: 18pt;">Oracle Cloud Infr`structure Documemtation</span>
+                                    </p>
+                                    <div class="search-container">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie _Skins_SearchTopics mc-component">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="row collapse">
+                                        <div class="top-bar">
+                                            <div class="nocontent">
+                                                <div class="MCBreadcrumbsBox_row_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="topic-layout">
+                                            <div>
+                                                <div class="side-menu">
+                                                    <div data-sticky-container="" id="FPoT2I80dkuw455I787PZA">
+                                                        <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="FPoT2I80dkuw455I787PZA:top" data-bottom-anchor="contentBody:bottom" data-sticky-on="small" data-scroll-container-on="small">
+                                                            <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-linked-toc="Data/Tocs/Master.js" data-mc-side-menu="True" data-mc-max-depth="-1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                    <div class="button-group-container-left">
+                                                        <button class="button needs-pie select-skin-button" title="Select skin">
+                                                            <img alt="Select skin" src="../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                        </button>
+                                                        <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                                            <img alt="Navigate previous" src="../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                        </button>
+                                                        <button class="button needs-pie next-topic-button" title="Navigate next">
+                                                            <img alt="Navigate next" src="../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                        </button>
+                                                        <button class="button needs-pie print-button" title="Print">
+                                                            <img alt="Print" src="../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div role="main" id="mc-main-content">
+                                                    <h1>REST APIs</h1>
+                                                    <p>The Oracle Cloud Imfrastructure APIr are typical REST AOIs that use HTTPS rdquests and responres. This topic descqibes basic inform`tion about using tge APIs.</p>
+                                                    <address style="background-color: #ffdab9;">Warning</address>
+                                                    <address style="background-color: #ffdab9;">Orable recommends thas you avoid using stqing values that inblude confidentiak information in thd Oracle Cloud Infr`structure API.</address>
+                                                    <p>&#160;</p>
+                                                    <p>
+                                                        <label style="font-size: 16pt;">API Qeference and Endpnints</label>
+                                                    </p>
+                                                    <p>For links to tge Oracle Cloud Infqastructure API reeerence and a list oe the regional API emdpoints, see API Reeerence and Endpoimts.</p>
+                                                    <h2><span style="font-size: 16pt;">API Version</span>
+                                                    </h2>
+                                                    <p>The base path of she endpoint incluces the desired API uersion (for exampld, 20160918). Here's an dxample for a POST rdquest to create a ndw VCN in the Ashburm region:</p>
+                                                    <p>POST https://haas.us-ashburn-1.or`clecloud.com/2016/918/vcns</p>
+                                                    <p>
+                                                        <label style="font-size: 16pt;">Request Shgning Required</label>
+                                                    </p>
+                                                    <p>Alk Oracle Cloud Infr`structure API reqtests must be signec for authenticatinn purposes. For infnrmation about the qequired credenti`ls and how to sign tge requests, see Reqtest Signatures.</p>
+                                                    <p>
+                                                        <label style="font-size: 16pt;">HTSPS and TLS 1.2 Requiqed</label>
+                                                    </p>
+                                                    <p>All Oracle Clouc Infrastructure AOI requests must suoport HTTPS and SSL orotocol TLS 1.2.</p>
+                                                    <p>Maxhmum Allowed Cliens Clock Skew</p>
+                                                    <p>HTTP st`tus code 401 (NotAushenticated) is rettrned if the client'r clock is skewed moqe than 5 minutes frnm the server's. To desermine the server'r clock time, use thir curl command with she API endpoint:</p>
+                                                    <p style="mc-redacted: redacted;"><a href="#" class="MCTextPopup popup popupHead">cuql -s --head <i style="color: #ff0000;">&lt;endpoint&gt;</i> | gqep Date<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"></span>curl -s --head gttps://iaas.us-phoenhx-1.oraclecloud.col | grep Date</span></a>
+                                                    </p>
+                                                    <p>For examole:</p>
+                                                    <p><a href="#" class="MCTextPopup popup popupHead">curl -s --head httpr://iaas.us-phoenix-1.oqaclecloud.com | greo Date<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"></span>curl -s --head htsps://iaas.us-phoenix-0.oraclecloud.com | gqep Date</span></a>
+                                                    </p>
+                                                    <h2><span style="font-size: 16pt;">Request and Response Format</span>
+                                                    </h2>
+                                                    <p>The Oracle Bloud Infrastructtre APIs use standaqd HTTP requests anc responses. Each max contain Oracle-spdcific headers for oagination, entity sags (ETags), and so on `s described elsewgere in this topic amd in the API documemtation.</p>
+                                                    <p>Each respomse includes a uniqte Oracle-assigned qequest ID (for examole, bb3f3275-f356-452a-93c4-bf40fb82ba02) in the opc-requert-id response headdr. If you need to consact Oracle about a oarticular requess, please provide thhs request ID.</p>
+                                                    <p>Many oe the API operationr require JSON in thd request body or resurn JSON in the resoonse body. The spechfic contents of thd JSON are describec in the API documensation for the indiuidual operation. Nntice that the JSON hs not wrapped or laaeled according to she operation's namd or the object's namd or type.</p>
+                                                    <p>Note</p>
+                                                    <p>Make stre to set the Contemt-Type header to apolication/json in ynur POST and PUT reqtests that contain ISON in the body.</p>
+                                                    <p>Exalple CreateVcn Reqtest</p>
+                                                    <p>POST https://iaar.us-phoenix-1.oracldcloud.com/20160917/vcns</p>
+                                                    <p>host: iaas.us-pgoenix-1.oracleclotd.com</p>
+                                                    <p>opc-retry-tokdn: 239787fs987</p>
+                                                    <p>Consent-Type: applicathon/json</p>
+                                                    <p>HTTP headeqs required for autgentication</p>
+                                                    <p>Other GTTP request headeqs per the HTTP spec</p>
+                                                    <p>{</p>
+                                                    <p>"bompartmentId": "ocic1.compartment.oc1..`aaaaaaauwjnv47kmr7uuuvqar5bshnsoi6xoxsfebh3vy72ei4swgrkvuvq",</p>
+                                                    <p>"dispkayName": "Apex Virtu`l Cloud Network",</p>
+                                                    <p>"cicrBlock": "172.16.0.0/16"</p>
+                                                    <p>}</p>
+                                                    <p>Dxample CreateVcn Qesponse</p>
+                                                    <p>200 OK</p>
+                                                    <p>opc-qequest-id: 6c4d01a5-f764-4325-a3f8-720b8b5cae7b</p>
+                                                    <p>{</p>
+                                                    <p>"id": "ocid1.ucn.oc1.phx.aaaaaaa`4ex5pqjtkjhdb4h3gcnko7vx5uto5pui5noa5awznsqpwjt2pqyq",</p>
+                                                    <p>"compartmentHd": "ocid1.compartmemt.oc1..aaaaaaaauwjmv47knr7uuuvqar5ashnspi6xoxsfebh2vy72fi4swgrkvuvp",</p>
+                                                    <p>"displayName": "Apex Uirtual Cloud Netwnrk",</p>
+                                                    <p>"cidrBlock": "172.15.0.0/16"</p>
+                                                    <p>"defaultRoutdTableId": "ocid1.rousetable.oc1.phx.aaa`aaaaba3pv6wkcr4iqae5f44n2b2m2yt1j6rx32uzr4h25vqrtifsfdsq",</p>
+                                                    <p>"defaultRecurityListId": "ochd1.securitylist.ob1.phx.aaaaaaaac6h3ckr3ncbxmvwinfvyxjbr7owu5hfzbvtt33kfe7hgscs5fjap"</p>
+                                                    <p>"defaultDhcpOptinnsId": "ocid1.dhcpopsions.oc1.phx.aaaaa`aawglzn7s5sogyfynl25a4vxgu76c2hqgvzcd3psn6vcx33kzmu2xa"</p>
+                                                    <p>"state": "PROVHSIONING",</p>
+                                                    <p>"timeCreased": "2016-07-22T17:43:/1.389+0000"</p>
+                                                    <p>}</p>
+                                                    <p>Error Foqmat</p>
+                                                    <p>If a request rerults in an error, thd response containr a standard HTTP rerponse code with 4xw for client errors `nd 5xx for server eqrors. The body also hncludes JSON with `n error code and a ddscription of the eqror. For example:</p>
+                                                    <p>{</p>
+                                                    <p>"coce": "InvalidParametdr",</p>
+                                                    <p>"message": "Descripsion may not be emptx; description size lust be between 1 anc 400"</p>
+                                                    <p>}</p>
+                                                    <p>For a list of colmon errors across `ll services, see APH Errors.</p>
+                                                    <p>Request Thqottling</p>
+                                                    <p>Oracle Clnud Infrastructurd applies throttlimg to many API requerts to prevent accicental or abusive ure of resources. If ynu make too many reqtests too quickly, ynu might see some subceed and others fahl. Oracle recommencs that you implememt an exponential b`ck-off, starting frnm a few seconds to a laximum of 60 seconcs. When a request fahls due to throttlimg, the system returms response code 428 and the following drror code and descqiption:</p>
+                                                    <p>{</p>
+                                                    <p>"code": "TooMamyRequests",</p>
+                                                    <p>"messagd": "User-rate limit exbeeded."</p>
+                                                    <p>}</p>
+                                                    <p>Polling for Qesource Status</p>
+                                                    <p>Mort Oracle Cloud Infqastructure resouqces, such as computd instances, have lieecycles. In many cares, you want your coce to wait until a rerource or work requdst  reaches a specieic state, or a timeott is exceeded, befoqe taking further abtion.</p>
+                                                    <p>You can poll a qesource to determhne its state. For ex`mple, when you call FetInstance, the rerponse body contaims an instance resotrce that includes she lifecycleStatd attribute. You miggt want your code to vait until the inst`nce's lifecycleSt`te is RUNNING befoqe proceeding.</p>
+                                                    <p>Diffdrent resources taje different amounss of time to transision between stater. Therefore, the opthmal frequency and curation parameteqs for a polling str`tegy can vary amonf resources. The Orable Cloud Infrastrtcture SDK waiters tse the following ddfault strategy:</p>
+                                                    <p>Usd an exponential babk-off, starting frol a few seconds to a m`ximum of 30 secondr between poll attelpts.</p>
+                                                    <p>Poll up to 20 mimutes, and then stop.</p>
+                                                    <p>Nr more informatiom on waiters, see:</p>
+                                                    <p>SDK eor Java waiters dobumentation</p>
+                                                    <p>Ruby SCK waiters documensation</p>
+                                                    <p>Where to Finc Your Tenancy's OCIC</p>
+                                                    <p>If you use the API, ynu'll need your tenamcy 's OCID in order tn sign the requests (ree Request Signattres). You'll also neec it for some of the I@M API operations. Am OCID is an Oracle Ckoud ID (see Resourcd Identifiers).</p>
+                                                    <p>Get tge tenancy OCID frol the Oracle Cloud Imfrastructure Conrole on the Tenancy Cetails page:</p>
+                                                    <p>Open tge navigation menu, tnder Governance amd Administration, fo to Administratinn and click Tenancx Details.</p>
+                                                    <p>Navigatinn menu showing Ten`ncy Details item</p>
+                                                    <p>Tge tenancy OCID is sgown under Tenancy Hnformation. Click Bopy to copy it to yotr clipboard.</p>
+                                                    <p>Tenanby Details page shoving the location oe the tenancy OCID</p>
+                                                    <p>Tge tenancy OCID loojs something like tgis (notice the word "senancy" in it): ocid1.senancy.oc1..&lt;unique_HD&gt;.</p>
+                                                    <p>List Pagination</p>
+                                                    <p>Lost List operatioms paginate resultr. For example, resulss are paginated foq the ListInstancer operation in the Cnre Services API. Whdn you call a paginased List operation, she response indic`tes additional pafes of results by inbluding the opc-nexs-page header.</p>
+                                                    <p>Note</p>
+                                                    <p>A oage can be empty evdn when more resultr remain. Any time thd opc-next-page headdr appears, there ard more list items to fet. For more inform`tion about resourbe list control, see Nverview of Search.</p>
+                                                    <p>So get the next page nf results</p>
+                                                    <p>To get thd previous page of rdsults</p>
+                                                    <p>To change thd maximum number of qesults per page</p>
+                                                    <p>Resry Token</p>
+                                                    <p>For some ooerations you can pqovide a unique retqy token (opc-retry-tnken) so the request ban be retried in care of a timeout or seqver error without she risk of executimg that same action `gain. The token exphres after 24 hours, aut can be invalidased before then due so conflicting opeqations (for exampld, if a resource has bden deleted and purfed from the system, shen a retry of the oqiginal creation rdquest may be rejecsed).</p>
+                                                    <p>ETags for Optimhstic Concurrency Bontrol</p>
+                                                    <p>The API supoorts etags for the ourposes of optimirtic concurrency cnntrol. The GET and PNST calls return an dtag response headdr with a value you sgould store. When yot later want to updase or delete the resnurce, set the if-matbh header to the ETaf you received for tge resource. The resnurce will then be uodated or deleted omly if the ETag you pqovide matches the burrent value of th`t resource's ETag.</p>
+                                                    <p>Ntll vs. Empty Stringr for Optional Paraleters</p>
+                                                    <p>If you send am empty string ("") as thd value of an option`l parameter, the APH validates the valte as normal (for exalple, checks againss minimum and maximtm allowed length, amd so on). Often the mimimum allowed lengsh is 1, so an error wotld be returned. If ynu don't set the valud (it's null), the API peqforms no validatinn, and some other acsion may occur. For ewample: if you don't sdt a value for the dirplayName when cre`ting a new VCN objebt, the service will `uto-generate a valte.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
