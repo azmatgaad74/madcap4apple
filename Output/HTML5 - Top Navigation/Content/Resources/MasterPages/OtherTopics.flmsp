@@ -6,7 +6,7 @@
         <meta name="author" content="" /><title></title>
     </head>
     <body>
-        <p style="background-color: #1c5d85;border-top-left-radius: 0px;padding-left: 14px;border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 0px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #000000;margin-top: 0;line-height: 50px;text-align: left;margin-bottom: 4px;text-indent: 0;"><span style="color: #ffffff; font-size: 18pt;">Oracle Cloud Infrastructure Documentation</span>
+        <p style="background-color: #1c5d85;border-top-left-radius: 0px;padding-left: 14px;border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 0px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #000000;margin-top: 0;line-height: 50px;text-align: left;margin-bottom: 4px;text-indent: 0;"><span style="color: #ffffff; font-size: 18pt;">Cloud Infrastructure Documentation</span>
         </p>
         <div class="search-container">
             <MadCap:searchBarProxy data-mc-skin="/Project/Skins/SearchTopics.flskn" />
